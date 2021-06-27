@@ -4,6 +4,7 @@ import logoImg from "../assets/images/logo.svg";
 import deleteImg from "../assets/images/delete.svg";
 import checkImg from "../assets/images/check.svg";
 import answerImg from "../assets/images/answer.svg";
+import emptyQuestions from "../assets/images/empty-questions.svg";
 
 import { Button } from "../components/Button";
 import { Question } from "../components/Question";
@@ -73,41 +74,33 @@ export function AdminRoom() {
         </div>
 
         <div className="question-list">
-          {questions
-            .sort((a, b) => b.likeCount - a.likeCount)
-            .map((question) => {
-              return (
+          {questions.length > 0 ? (
+            questions
+              .sort((a, b) => b.likeCount - a.likeCount)
+              .map((question) => (
                 <Question key={question.id} content={question.content} author={question.author} isAnswered={question.isAnswered} isHighlighted={question.isHighlighted}>
                   {!question.isAnswered && (
                     <>
-                      <button
-                        type="button"
-                        onClick={() => {
-                          handleCheckQuestionAsAnswered(question.id);
-                        }}>
+                      <button type="button" onClick={() => handleCheckQuestionAsAnswered(question.id)}>
                         <img src={checkImg} alt="Marcar pergunta como respondida" />
                       </button>
-
-                      <button
-                        type="button"
-                        onClick={() => {
-                          handleHighlightQuestion(question.id);
-                        }}>
+                      <button type="button" onClick={() => handleHighlightQuestion(question.id)}>
                         <img src={answerImg} alt="Dar destaque à pergunta" />
                       </button>
                     </>
                   )}
-
-                  <button
-                    type="button"
-                    onClick={() => {
-                      handleDeleteQuestion(question.id);
-                    }}>
+                  <button type="button" onClick={() => handleDeleteQuestion(question.id)}>
                     <img src={deleteImg} alt="Remover pergunta" />
                   </button>
                 </Question>
-              );
-            })}
+              ))
+          ) : (
+            <div className="empty-questions">
+              <img src={emptyQuestions} alt="Sem mensagens"></img>
+              <strong>Está meio vazio por aqui...</strong>
+              <p>Esta sala ainda não possui perguntas. Compartilhe o código para que outras pessoas possam participar!</p>
+            </div>
+          )}
         </div>
       </main>
     </div>
