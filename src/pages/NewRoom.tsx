@@ -44,7 +44,9 @@ export function NewRoom() {
           <Link to="/">
             <img src={logoImg} alt="Letmeask" />
           </Link>
-          <h2>Criar uma nova sala</h2>
+          <h2>
+            Olá <span>{user?.name}</span>! Gostaria de criar uma nova sala?
+          </h2>
           <form onSubmit={handleCreateRoom}>
             <input type="text" placeholder="Nome da sala" onChange={(event) => setNewRoom(event.target.value)} value={newRoom} />
             <Button type="submit">Criar sala</Button>
