@@ -8,6 +8,8 @@
 
 ## 💻 Sobre o projeto
 
+Teste o projeto clicando [AQUI](https://letmeask-fab23.web.app)
+
 O Letmeask é uma aplicação pensada para os criadores de conteúdo em plataformas de streaming, visando oferecer uma solução agradável e organizada para melhorar a interação entre streamer e seu público.
 
 Com o Letmeask, o streamer poderá criar salas de Q&A, onde ele recebe as perguntas dos telespectadores em tempo real. Os usuários da sala podem fazer livremente suas perguntas, porém caso alguma pergunta já tenha sido realizada, há a opção de **curtir** perguntas de outros usuários, evitando um flood.
@@ -47,4 +49,3 @@ $ yarn start
 A aplicação então estará disponível no seu browser pelo endereço http://localhost:3000.
 
 **IMPORTANTE:** é necessário possuir uma conta no Firebase, bem como um projeto criado para disponibilizar um Realtime Database. Crie sua conta no Firebase clicando [AQUI](https://firebase.google.com/)
-
