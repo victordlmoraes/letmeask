@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+<p align="center">
+  <img alt="Letmeask" src="src/assets/images/logo.svg" width="280px">
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img alt="Letmeask Desktop" src="src/assets/images/letmeask-desktop.jpg" width="100%">
+</p>
 
-## Available Scripts
+## 💻 Sobre o projeto
 
-In the project directory, you can run:
+O Letmeask é uma aplicação pensada para os criadores de conteúdo em plataformas de streaming, visando oferecer uma solução agradável e organizada para melhorar a interação entre streamer e seu público.
 
-### `yarn start`
+Com o Letmeask, o streamer poderá criar salas de Q&A, onde ele recebe as perguntas dos telespectadores em tempo real. Os usuários da sala podem fazer livremente suas perguntas, porém caso alguma pergunta já tenha sido realizada, há a opção de **curtir** perguntas de outros usuários, evitando um flood.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+O dono da sala (streamer) responderá essas perguntas, e assim que dada a resposta, poderá marcar a questão como **respondida**, ou se uma pergunta não agradar, for repetida, ou até mesmo ofensiva, poderá ser **deletada** pelo streamer dono da sala.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Este projeto foi desenvolvido durante a **[Next Level Week Together](https://nextlevelweek.com/)**, apresentada dos dias 20 a 27 de Junho de 2021. Trilha React ministrada por Diego Fernandes, CTO da Rocketseat.
 
-### `yarn test`
+## 🧪 Tecnologias
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-### `yarn build`
+- React[React](https://reactjs.org)
+- [Firebase](https://firebase.google.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Sass]()
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Como utilizar
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Clone o projeto e acesse a pasta do mesmo.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+$ git clone https://github.com/victordlmoraes/letmeask
+$ cd letmeask
+```
 
-### `yarn eject`
+Para iniciá-lo, siga os passos abaixo:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+# Instalar as dependências
+$ yarn
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Iniciar o projeto
+$ yarn start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+A aplicação então estará disponível no seu browser pelo endereço http://localhost:3000.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**IMPORTANTE:** é necessário possuir uma conta no Firebase, bem como um projeto criado para disponibilizar um Realtime Database. Crie sua conta no Firebase clicando [AQUI](https://firebase.google.com/)
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
