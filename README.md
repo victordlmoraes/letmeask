@@ -20,7 +20,7 @@ Este projeto foi desenvolvido durante a **[Next Level Week Together](https://nex
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- React[React](https://reactjs.org)
+- [React](https://reactjs.org)
 - [Firebase](https://firebase.google.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Sass]()
